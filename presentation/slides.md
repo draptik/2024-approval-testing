@@ -18,16 +18,6 @@ download: true
 
 src: ./pages/00-title.md
 ---
-
-# Revitalizing Legacy Code
-# Approval Testing Unleashed
-
-#### Erfahrungen aus der Legacy-App-Portierung und 
-#### Einblicke in die Welt von Verify
-
-Patrick Drechsler
-
----
 src: ./pages/01-intro.md
 ---
 
