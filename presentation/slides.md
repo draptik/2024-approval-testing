@@ -3,8 +3,8 @@ theme: ./mathema-2023
 defaults:
   layout: "default-with-footer"
 title: 'Approval Testing Unleased'
-occasion: "ADC 2024"
-occasionLogoUrl: "./images/logo_adc.png"
+occasion: "Softwerkskammer Nbg 2024"
+occasionLogoUrl: "./images/logo_swk_nbg.webp"
 company: "MATHEMA GmbH"
 presenter: "Patrick Drechsler"
 contact: "patrick.drechsler@mathema.de"
