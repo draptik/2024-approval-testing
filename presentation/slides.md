@@ -3,7 +3,7 @@ theme: ./mathema-2023
 defaults:
   layout: "default-with-footer"
 title: 'Approval Testing Unleased'
-occasion: "Softwerkskammer Nbg 2024"
+occasion: "Softwerkskammer Nürnberg 2024"
 occasionLogoUrl: "./images/logo_swk_nbg.webp"
 company: "MATHEMA GmbH"
 presenter: "Patrick Drechsler"
