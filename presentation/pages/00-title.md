@@ -1,4 +1,4 @@
-# Revitalizing Legacy Code: Approval Testing Unleashed
+# Revitalizing Legacy Code Approval Testing Unleashed
 
 ### Erfahrungen aus der Legacy-App Portierung und Einblicke in die Welt von Verify
 
