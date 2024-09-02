@@ -168,6 +168,12 @@ image: /images/machine3.jpg
 
 ---
 
+Walking on water and developing software from a specification are easy if both are frozen.
+
+Edward V. Berard 
+
+---
+
 ## Testing the Ported Code
 
 - Get hundreds of realistic example JSONs from the customer
