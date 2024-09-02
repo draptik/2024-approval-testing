@@ -28,7 +28,7 @@ layout: image-left
 image: /images/machine4.jpg
 ---
 
-# Legacy-Context
+## Legacy-Context
 
 - Domain
 - Tech-Stack(s)
@@ -39,7 +39,7 @@ layout: image-left
 image: /images/science.jpg
 ---
 
-# Domain
+## Domain
 
 - expert system
 - user: engineers in sales
@@ -58,7 +58,7 @@ layout: image-right
 image: /images/machine2.jpg
 ---
 
-# Tech-Stack(s)
+## Tech-Stack(s)
 
 - Main Stack: **LAMP**
   - **L**inux
@@ -75,7 +75,7 @@ layout: image-right
 image: /images/machine3.jpg
 ---
 
-# Architecture
+## Architecture
 
 - Frontend (FE): Angular 1
 - Backend (BE): PHP
@@ -84,9 +84,10 @@ image: /images/machine3.jpg
 
 ---
 
-# Find a "Seam"
+## Find a "Seam"
 
 - What is a Seam? 👉 M. Feathers "Working Effectively with Legacy Code"
+- "a seam is a place where you can alter behavior in your program without editing in that place"
 
 <img
   class="absolute bottom-20 left-10 h-70"
@@ -95,7 +96,7 @@ image: /images/machine3.jpg
 
 ---
 
-# Find a "Seam" - Example
+## Find a "Seam" - Example
 
 - Redirecting a php request to a new dotnet console application
   ```php
@@ -131,7 +132,7 @@ image: /images/machine3.jpg
 
 ---
 
-# Porting Code from PHP to C# (1/2)
+## Porting Code from PHP to C# (1/2)
 
 <v-clicks>
 
@@ -150,7 +151,7 @@ image: /images/machine3.jpg
 
 ---
 
-# Porting Code from PHP to C# (2/2)
+## Porting Code from PHP to C# (2/2)
 
 <v-clicks>
 
@@ -167,7 +168,7 @@ image: /images/machine3.jpg
 
 ---
 
-# Testing the Ported Code
+## Testing the Ported Code
 
 - Get hundreds of realistic example JSONs from the customer
 - Run through the old system, save responses
@@ -179,7 +180,7 @@ How does that work in detail?
 
 ---
 
-# Definitions
+## Definitions
 
 - Golden Master Test
 - Approval Testing
@@ -193,7 +194,7 @@ And discuss the others later.
 
 ---
 
-# Initial Workflow
+## Initial Workflow
 
 - No existing `.verified.` file.
 
@@ -215,7 +216,7 @@ discard-->closeDiff
 
 ---
 
-# Subsequent Workflow
+## Subsequent Workflow
 
 - Existing `.verified.` file is compared with `.received.` file...
 
@@ -242,7 +243,7 @@ discard-->closeDiff
 
 ---
 
-# Hello World Example
+## Hello World Example
 
 ```csharp
 public record Person(string FirstName, string LastName, int Age);
@@ -272,7 +273,7 @@ Verified text file:
 layout: two-cols-header
 ---
 
-# Where is the Arrange-Act-Assert?
+## Where is the Arrange-Act-Assert?
 
 ::left::
 
@@ -356,7 +357,7 @@ layout: image-left
 image: /images/randomness.jpg
 ---
 
-# Verify - Randomness
+## Verify - Randomness
 
 No problem 👉 "Scrubbers" to the rescue
 
@@ -440,7 +441,7 @@ public Task PersonTest()
 
 ---
 
-# Verify - Custom Scrubbers
+## Verify - Custom Scrubbers
 
 https://github.com/VerifyTests/Verify/blob/main/docs/scrubbers.md
 
@@ -464,7 +465,7 @@ layout: image-left
 image: /images/tooling.webp
 ---
 
-# Verify - Diff-Tooling for Devs
+## Verify - Diff-Tooling for Devs
 
 - Windows: [DiffEngineTray](https://github.com/VerifyTests/DiffEngine/blob/main/docs/tray.md)
 - [Resharper test runner](https://plugins.jetbrains.com/plugin/17241-verify-support)
@@ -477,7 +478,7 @@ Very cool: customizable to your needs!
 
 ---
 
-# Verify - Setup
+## Verify - Setup
 
 - We can define the output folder, file extensions, etc.
 - Example `ModuleInitializer` for global setup, defining the output folder:
@@ -501,7 +502,7 @@ Very cool: customizable to your needs!
   ```
 ---
 
-# Verify - CI
+## Verify - CI
 
 - works out of the box
 - No need to install anything on the CI server
@@ -509,7 +510,7 @@ Very cool: customizable to your needs!
 
 ---
 
-# Verify - JSON/XML
+## Verify - JSON/XML
 
 - JSON/XML are first-class citizens:
   - Instead of verifiying a string, you can verify a JSON/XML object:
@@ -519,7 +520,7 @@ Very cool: customizable to your needs!
 
 ---
 
-# Verify - JSON/XML: Example
+## Verify - JSON/XML: Example
 
 ```csharp
 string InvalidJson = """{ "FirstName": "Homer" """;
@@ -545,7 +546,7 @@ So, if you know that you are working with JSON/XML, use `VerifyJson`/`VerifyXml`
 
 ---
 
-# Verify - Simplify Reading Test Data
+## Verify - Simplify Reading Test Data
 
 ```csharp
 [Fact]
@@ -569,7 +570,7 @@ private static string GetFileContent(string filename)
 
 ---
 
-# Verify - Floating Point Numbers
+## Verify - Floating Point Numbers
 
 - Floating point numbers are always a joy 😿
 - Especially when working with different programming languages and platforms
@@ -581,7 +582,7 @@ private static string GetFileContent(string filename)
 
 ---
 
-# Verify - Floating Point Numbers
+## Verify - Floating Point Numbers
 
 Verify offers different strategies:
 
@@ -604,7 +605,7 @@ layout: image-right
 image: /images/fsharp512.png
 ---
 
-# Verify - F# Support
+## Verify - F# Support
 
 works out of the box 😎
 
@@ -628,7 +629,7 @@ https://github.com/VerifyTests/Verify?tab=readme-ov-file#extensions
 
 ---
 
-# Verify - For all the languages!
+## Verify - For all the languages!
 
 Similar libraries exist for most programming languages.
 
@@ -661,7 +662,7 @@ img {
 
 ---
 
-# Definitions - Revisited
+## Definitions - Revisited
 
 - Synonyms:
   - ✅ Golden Master Test
@@ -678,7 +679,7 @@ img {
 
 ---
 
-# Verify - Maintainer
+## Verify - Maintainer
 
 - Simon Cropp
 - https://github.com/SimonCropp
@@ -687,7 +688,7 @@ img {
 
 ---
 
-# Summary
+## Summary
 
 - Verify is a great tool when dealing with legacy code
 - You must find a "seam" in the legacy code to inject the new code
