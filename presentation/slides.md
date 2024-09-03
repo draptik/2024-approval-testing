@@ -97,30 +97,32 @@ image: /images/feathers-legacy-code.jpg
 
 ## Find a "Seam" - Example
 
-- Redirecting a php request to a new dotnet console application
-  ```php
-  // Somewhere inside a PHP controller class...
-  //
-  // Seam which toggles between PHP and .NET
-  if ($this->useDotNet) { // 👈 Feature Toggle
-    // C# calculation (new)
-    return $this->calcDotNet("calculate", $request);
-  }
-  else {
-    // PHP calculation (legacy)
-    return new CalcWithPhp($request);
-  }
-  ```
-  ```php
-  // ⚠️ Use the "Seam"
-  function calcDotNet($endpointName, Request $request)
-  {
-    // ...
-    $encodedJson = base64_encode($request->getContent());
-    $result = shell_exec("".$dotnetProgramm." ".$endpointName."  ".$encodedJson."");
-    return $result;
-  }
-  ```
+Redirecting a php request to a new dotnet console application
+
+```php {all|4|5-6,9-10|all}
+// Somewhere inside a PHP controller class...
+//
+// Seam which toggles between PHP and .NET
+if ($this->useDotNet) { // 👈 Feature Toggle
+  // C# calculation (new)
+  return $this->calcDotNet("calculate", $request);
+}
+else {
+  // PHP calculation (legacy)
+  return new CalcWithPhp($request);
+}
+```
+
+```php
+// ⚠️ Use the "Seam"
+function calcDotNet($endpointName, Request $request)
+{
+  // ...
+  $encodedJson = base64_encode($request->getContent());
+  $result = shell_exec("".$dotnetProgramm." ".$endpointName."  ".$encodedJson."");
+  return $result;
+}
+```
 
 <style>
 .slidev-code {
@@ -136,14 +138,15 @@ image: /images/feathers-legacy-code.jpg
 <v-clicks>
 
 - ⚠️ Pay attention to data structures (dynamic vs. static typing) 
-  ```php
-  $foo[1] = 1;
-  $foo[2] = 2.3;
-  $foo[3] = "3";
-  // ...
-  // in some derived class (developed years later, by a different developer):
-  $foo["bar"] = [1, "2", 3.3];
-  ```
+```php {1|1-2|1-3|all}
+$foo[1] = 1;                  // 👈 is foo an int ?
+$foo[2] = 2.3;                // 👈 or a float ?
+$foo[3] = "3";                // 👈 or a string ?
+// ...
+// in some derived class (developed years later, by a different developer):
+$foo["bar"] = [1, "2", 3.3];  // 👈 or ???
+```
+
 - and floating point numbers (more on that later)...
 
 </v-clicks>
