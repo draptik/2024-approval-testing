@@ -385,8 +385,6 @@ public record Person(
     DateTime? UpdatedAt); // 👈
 ```
 
-::right::
-
 ```csharp
 [Fact]
 public Task PersonTest()
@@ -403,6 +401,8 @@ public Task PersonTest()
     return Verify(homer);
 }
 ```
+
+::right::
 
 ```json
 {
@@ -435,10 +435,8 @@ public Task PersonTest()
   column-gap: 20px; /* Adjust the gap size as needed */
 }
 
-
 .slidev-code {
-  font-size: 10px !important;
-  line-height: 11px !important;
+  font-size: 11px !important;
 }
 </style>
 
@@ -463,6 +461,7 @@ var settings = new VerifySettings();
 settings.ScrubLinesWithReplace(line =>
     System.Text.RegularExpressions.Regex.Replace(line, "#clip\\w+", "#clipSCRUBBED"));
 ```
+
 ---
 layout: image-left
 image: /images/tooling.webp
