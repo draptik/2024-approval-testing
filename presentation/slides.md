@@ -97,7 +97,7 @@ image: /images/feathers-legacy-code.jpg
 
 ## Find a "Seam" - Example
 
-Redirecting a php request to a new dotnet console application
+Redirecting a php request to a new **dotnet console** application
 
 ```php {all|4|5-6,9-10|all}
 // Somewhere inside a PHP controller class...
@@ -507,6 +507,9 @@ Very cool: customizable to your needs!
     }
   }
   ```
+---
+layout: image-right
+image: /images/server.jpg
 ---
 
 ## Verify - CI
