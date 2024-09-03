@@ -167,10 +167,21 @@ image: /images/machine3.jpg
 </v-clicks>
 
 ---
+layout: image-left
+image: /images/frozen.jpg
+---
 
-Walking on water and developing software from a specification are easy if both are frozen.
+**Walking on water** and **developing software** from a specification are easy if both are **frozen**. -- Edward V. Berard 
 
-Edward V. Berard 
+<style>
+  p {
+    margin-top: 5em;
+  }
+strong {
+  font-size: 1.1em;
+  color: darkblue;
+}
+</style>
 
 ---
 
