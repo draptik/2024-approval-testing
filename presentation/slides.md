@@ -296,7 +296,7 @@ layout: two-cols-header
 
 ```csharp
 public record PersonRequest(string FirstName, string LastName, int Age);
-public record PersonResponse(string FirstName, string LastName,int Age)
+public record PersonResponse(string FirstName, string LastName, int Age)
 {
   public static PersonResponse FromRequest(PersonRequest request) =>
     new(request.FirstName, request.LastName,request.Age);
@@ -305,23 +305,17 @@ public record PersonResponse(string FirstName, string LastName,int Age)
 
 ```csharp
 [Fact]
-public Task PersonRequest_homer_is_valid()
+public Task PersonResponse_FromRequest()
 {
   // Arrange
-  var now = DateTime.Now;
-  var homer = new PersonRequest(
-    "Homer",
-    "Simpson",
-    39,
-    Guid.NewGuid(),
-    now,
-    now);
+  PersonRequest homer = new ("Homer", "Simpson", 39);
 
   // Act
   var actual = PersonResponse.FromRequest(homer);
   
   // Assert
   return Verify(actual);
+}
 ```
 
 ::right:: 
@@ -332,10 +326,7 @@ Verified text file:
 {
   FirstName: Homer,
   LastName: Simpson,
-  Age: 39,
-  Id: Guid_1,
-  CreatedAt: DateTime_1,
-  UpdatedAt: DateTime_1
+  Age: 39
 }
 ```
 
@@ -361,11 +352,6 @@ Verified text file:
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 1fr auto;
   column-gap: 20px; /* Adjust the gap size as needed */
-}
-
-.slidev-code {
-  font-size: 8px !important;
-  line-height: 10px !important;
 }
 </style>
 
