@@ -377,26 +377,27 @@ layout: two-cols-header
 
 ::left::
 
-```csharp
+```csharp {all|5-8,19-23}
 public record Person(
     string FirstName,
     string LastName,
     int Age,
     Guid Id,              // 👈
+    DateTime? AquiredAt,  // 👈
     DateTime CreatedAt,   // 👈
     DateTime? UpdatedAt); // 👈
-```
 
-```csharp
 [Fact]
 public Task PersonTest()
 {
     var now = DateTime.Now;
+    var anotherDate = DateTime.Now;
     var homer = new Person(
         "Homer",
         "Simpson",
         39,
         Guid.NewGuid(), // 👈
+        anotherDate,    // 👈
         now,            // 👈
         now);           // 👈
 
@@ -412,8 +413,9 @@ public Task PersonTest()
   LastName: Simpson,
   Age: 39,
   Id: Guid_1,            // 👈
-  CreatedAt: DateTime_1, // 👈
-  UpdatedAt: DateTime_1  // 👈
+  AquiredAt: DateTime_1, // 👈 "1"
+  CreatedAt: DateTime_2, // 👈 "2"
+  UpdatedAt: DateTime_2  // 👈 "2"
 }
 ```
 
@@ -438,7 +440,8 @@ public Task PersonTest()
 }
 
 .slidev-code {
-  font-size: 11px !important;
+  font-size: 10px !important;
+  line-height: 11px !important;
 }
 </style>
 
