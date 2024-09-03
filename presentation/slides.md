@@ -71,7 +71,7 @@ image: /images/machine2.jpg
   - MATLAB
 
 ---
-layout: image-right
+layout: image-left
 image: /images/machine3.jpg
 ---
 
@@ -83,16 +83,15 @@ image: /images/machine3.jpg
   - Let's ignore this for now
 
 ---
+layout: image-right
+image: /images/feathers-legacy-code.jpg
+---
 
 ## Find a "Seam"
 
 - What is a Seam? 👉 M. Feathers "Working Effectively with Legacy Code"
 - "a seam is a place where you can alter behavior in your program without editing in that place"
-
-<img
-  class="absolute bottom-20 left-10 h-70"
-  src="/images/feathers-legacy-code.jpg"
-/>
+- I used a "feature toggle" as seam
 
 ---
 
