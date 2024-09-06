@@ -302,7 +302,7 @@ public record PersonRequest(string FirstName, string LastName, int Age);
 public record PersonResponse(string FirstName, string LastName, int Age)
 {
   public static PersonResponse FromRequest(PersonRequest request) =>
-    new(request.FirstName, request.LastName,request.Age);
+    new (request.FirstName, request.LastName, request.Age);
 }
 ```
 
