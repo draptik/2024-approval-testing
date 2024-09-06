@@ -203,6 +203,7 @@ How does that work in detail?
 
 - Golden Master Test
 - Approval Testing
+- Snapshot Testing
 - Verify
 - Regression Test
 - Acceptance Test
