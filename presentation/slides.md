@@ -293,7 +293,7 @@ Verified text file:
 layout: two-cols-header
 ---
 
-## Where is the Arrange-Act-Assert?
+## Where is the Arrange-Act-Assert (GWT)?
 
 ::left::
 
@@ -310,13 +310,13 @@ public record PersonResponse(string FirstName, string LastName, int Age)
 [Fact]
 public Task PersonResponse_FromRequest()
 {
-  // Arrange
+  // Arrange / Given
   PersonRequest homer = new ("Homer", "Simpson", 39);
 
-  // Act
+  // Act / When
   var actual = PersonResponse.FromRequest(homer);
   
-  // Assert
+  // Assert / Then
   return Verify(actual);
 }
 ```
@@ -332,6 +332,8 @@ Verified text file:
   Age: 39
 }
 ```
+
+AAA vs GWT is the same mindset
 
 <style>
 .two-cols-header {
