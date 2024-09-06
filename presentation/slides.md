@@ -475,7 +475,7 @@ layout: image-left
 image: /images/tooling.webp
 ---
 
-## Verify - Diff-Tooling for Devs
+## Verify: Diff-Tooling for Devs
 
 - Windows: [DiffEngineTray](https://github.com/VerifyTests/DiffEngine/blob/main/docs/tray.md)
 - [Resharper test runner](https://plugins.jetbrains.com/plugin/17241-verify-support)
@@ -485,6 +485,12 @@ image: /images/tooling.webp
 - 1st class integration for most common [diff tools](https://github.com/VerifyTests/DiffEngine?tab=readme-ov-file#supported-tools)
 
 Very cool: customizable to your needs!
+
+<style>
+  h2 {
+    line-height: 1.4em;
+  }
+</style>
 
 ---
 
