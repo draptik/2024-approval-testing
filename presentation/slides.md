@@ -209,8 +209,8 @@ How does that work in detail?
 - Acceptance Test
 - Characterization Test
 
-We'll stick with <span v-mark.underline.orange="4">Approval Testing"</span> and <span v-mark.underline.orange="4">"Verify"</span> for now.
-And discuss the others later.
+We'll stick with <span v-mark.underline.orange="1">"Approval Testing"</span> and <span v-mark.underline.orange="1">"Verify"</span> for now.
+And discuss the others later...
 
 ---
 
