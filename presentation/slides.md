@@ -618,13 +618,17 @@ Verify offers different strategies:
     - fails on Windows dev machine, until windows dev commits ☹️
 
 ---
-layout: image-right
+layout: image-left
 image: /images/fsharp512.png
 ---
 
 ## Verify - F# Support
 
 works out of the box 😎
+
+
+<img src="/images/party.gif"  width=450 />
+
 
 ---
 layout: image-right
