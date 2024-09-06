@@ -180,8 +180,8 @@ image: /images/frozen.jpg
     margin-top: 5em;
   }
 strong {
-  font-size: 1.1em;
-  color: darkblue;
+  font-size: 1.2em;
+  color: #c5003e;
 }
 </style>
 
