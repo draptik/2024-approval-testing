@@ -538,13 +538,11 @@ image: /images/server.jpg
 ```csharp
 string InvalidJson = """{ "FirstName": "Homer" """;
 
-[Fact(Skip = "This does not fail fast, and will do a string comparison... and fail")]
-public Task Invalid_json_demo1() =>
-    Verify(InvalidJson);     // 👈 Verify, vs...
+[Fact]
+public Task Invalid_json_demo1() => Verify(InvalidJson);     // 👈 Verify, vs...
 
-[Fact(Skip = "This fails fast, because the input is invalid JSON")]
-public Task Invalid_json_demo2() =>
-    VerifyJson(InvalidJson); // 👈 VerifyJson 😎
+[Fact]
+public Task Invalid_json_demo2() => VerifyJson(InvalidJson); // 👈 VerifyJson 😎
 ```
 
 Error message from second test:
