@@ -11,7 +11,7 @@ Slides 👇
 - QR Code or
 - https://draptik.github.io/2024-09-swk-nbg-approval-testing/
 - sample code:
-  https://github.com/draptik/2024-approval-testing
+  https://github.com/draptik/2024-approval-testing/tree/softwerkskammer-nbg/code/
 
 <img
   class="absolute top-10 right-30 h-70"
@@ -20,4 +20,5 @@ Slides 👇
 
 <p style="font-size:0.75em">
 Image sources: <a href="https://pixabay.com/" target="_blank">pixabay.com</a> and <a href="https://perchance.org/ai-photo-generator" target="_blank">perchance.org/ai-photo-generator</a>
-</p>
+</p>   
+
