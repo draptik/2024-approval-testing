@@ -3,7 +3,7 @@ namespace ApprovalTesting.Demo1.Tests;
 public class PersonTests
 {
     [Fact]
-    public Task PersonTest()
+    public Task Handle_randomness()
     {
         var now = DateTime.Now;
         var anotherDate = DateTime.Now;
