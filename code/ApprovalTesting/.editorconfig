@@ -175,3 +175,6 @@ indent_size = 2
 [*.cs]
 # This gives too many false positives
 dotnet_diagnostic.IDE0005.severity = none
+
+# Ignore namespace declaration warning
+dotnet_diagnostic.IDE0160.severity = none
