@@ -9,9 +9,9 @@
 Slides 👇
 
 - QR Code or
-- hhttps://draptik.github.io/2024-09-seneca-approval-testing/
+- https://draptik.github.io/2024-09-seneca-approval-testing/
 - sample code:
-  https://github.com/draptik/2024-approval-testing/tree/softwerkskammer-nbg/code/
+  https://github.com/draptik/2024-approval-testing/tree/seneca24/code/
 
 <img
   class="absolute top-10 right-30 h-70"

@@ -4,7 +4,7 @@ defaults:
   layout: "default-with-footer"
 title: 'Approval Testing Unleased'
 occasion: "SENECA 2024"
-occasionLogoUrl: "./images/logo_seneca24.png"
+occasionLogoUrl: "./images/logo-seneca24.png"
 company: "MATHEMA GmbH"
 presenter: "Patrick Drechsler"
 contact: "patrick.drechsler@mathema.de"
