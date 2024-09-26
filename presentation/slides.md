@@ -3,8 +3,8 @@ theme: ./mathema-2023
 defaults:
   layout: "default-with-footer"
 title: 'Approval Testing Unleased'
-occasion: "Softwerkskammer Nürnberg 2024"
-occasionLogoUrl: "./images/logo_swk_nbg.webp"
+occasion: "SENECA 2024"
+occasionLogoUrl: "./images/logo_seneca24.png"
 company: "MATHEMA GmbH"
 presenter: "Patrick Drechsler"
 contact: "patrick.drechsler@mathema.de"
