@@ -9,7 +9,7 @@
 Slides 👇
 
 - QR Code or
-- https://draptik.github.io/2024-09-swk-nbg-approval-testing/
+- hhttps://draptik.github.io/2024-09-seneca-approval-testing/
 - sample code:
   https://github.com/draptik/2024-approval-testing/tree/softwerkskammer-nbg/code/
 
