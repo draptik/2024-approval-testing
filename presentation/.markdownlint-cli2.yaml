@@ -5,3 +5,4 @@ config:
   MD033: false # no inline html
   MD024: false # no duplicate headings
   MD045: false # no alt text
+  MD026: false # no trailing punctuation in headings
