@@ -1,14 +1,14 @@
 ## Patrick Drechsler
 
-- Software Entwickler
-- Beruflich: C#
-- Interessen:
-    - Software Crafting
-    - Test-Driven Development
-    - Funktionale Programmierung
-    - Domain-Driven Design
-- Background: Naturwissenschaftler
-- Slides sind online: Siehe QR-Code
+- Software Developer
+- Work: C#
+- Interests:
+  - Software Crafting
+  - Test-Driven Development
+  - Funktional Programming
+  - Domain-Driven Design
+- Background: Biology
+- Slides are online: See QR-Code
 
 <img
   class="absolute top-10 right-30 h-70"
